@@ -245,7 +245,6 @@ section h2 {
 button.btn {
   width: fit-content;
   border: none;
-  cursor: none;
 }
 
 .btn:hover {
@@ -305,27 +304,6 @@ footer {
 .member-name { font-size: 1rem; color: var(--primary); font-weight: bold; margin-bottom: 0.4rem; }
 .member-role { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.05em; }
 
-/* CURSOR */
-* { cursor: none; }
-
-.cursor {
-  position: fixed;
-  width: 32px;
-  height: 32px;
-  background: url('/assets/cursor.png') center/contain no-repeat;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
-
-.cursor.hover {
-  width: 40px;
-  height: 40px;
-}
-
-.cursor.click {
-  transform: translate(-50%, -50%) scale(0.8);
-}
 
 /* GLITCH */
 .glitch { position: relative; }

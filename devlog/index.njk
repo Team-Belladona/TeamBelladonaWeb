@@ -10,7 +10,7 @@ title: Devlog
     <div class="devlog-left">
       <p class="devlog-tag">ELSEWHERE</p>
       <h3 class="devlog-title">{{ post.data.title }}</h3>
-      <p class="devlog-excerpt">{{ post.data.excerpt }}</p>
+      <p class="devlog-excerpt">{{ post.templateContent | striptags | truncate(150) }}</p>
     </div>
     {% if post.data.thumbnail %}
     <div class="devlog-thumb">
