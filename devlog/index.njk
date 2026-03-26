@@ -12,9 +12,10 @@ title: Devlog
       <h3 class="devlog-title">{{ post.data.title }}</h3>
       <p class="devlog-excerpt">{{ post.templateContent | striptags | truncate(150) }}</p>
     </div>
-    {% if post.data.thumbnail %}
+    {% set thumb = post.templateContent | firstImage %}
+    {% if thumb %}
     <div class="devlog-thumb">
-      <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}">
+    <img src="{{ thumb }}" alt="{{ post.data.title }}">
     </div>
     {% endif %}
   </a>
