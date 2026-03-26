@@ -50,10 +50,10 @@ module.exports = function(eleventyConfig) {
     const $ = cheerio.load(content);
     const imgs = $("img").toArray();
 
-    for (const img of imgs) {
-      const src = $(img).attr("src");
-      if (!src || src.startsWith("http") || src.startsWith("/assets/img/") || src.includes(".gif")) continue;
-      const localPath = "." + src;
+      for (const img of imgs) {
+        const src = decodeURIComponent($(img).attr("src"));
+        if (!src || src.startsWith("http") || src.startsWith("/assets/img/") || src.includes(".gif")) continue;
+        const localPath = "." + src;
 
       try {
         let metadata = await Image(localPath, {
