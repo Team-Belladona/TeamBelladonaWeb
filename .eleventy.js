@@ -35,8 +35,7 @@ module.exports = function(eleventyConfig) {
 
     for (const img of imgs) {
       const src = $(img).attr("src");
-      if (!src || src.startsWith("http") || src.startsWith("/assets/img/")) continue;
-
+      if (!src || src.startsWith("http") || src.startsWith("/assets/img/") || src.includes(".gif")) continue;
       const localPath = "." + src;
 
       try {
