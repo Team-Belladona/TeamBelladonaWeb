@@ -5,6 +5,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("main.js");
+  eleventyConfig.addCollection("elsewherePaginated", function(api) {
+  return api.getFilteredByTag("elsewhere")
+    .filter(post => !post.inputPath.includes("index"))
+    .reverse();
+});
+  eleventyConfig.addCollection("elsewherePaged", function(api) {
+  const posts = api.getFilteredByTag("elsewhere")
+    .filter(post => !post.inputPath.includes("index"))
+    .sort((a, b) => a.date - b.date);
+  
+  posts.forEach((post, i) => {
+    post.data.previousPost = posts[i - 1] || null;
+    post.data.nextPost = posts[i + 1] || null;
+  });
+
+  return posts;
+});
 
   eleventyConfig.addCollection("elsewhere", function(api) {
     return api.getFilteredByTag("elsewhere").filter(post => !post.inputPath.includes("index"));

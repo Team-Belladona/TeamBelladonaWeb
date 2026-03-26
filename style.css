@@ -600,3 +600,42 @@ footer {
   flex-direction: column;
   gap: 0.3rem;
 }
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ede6f4;
+  gap: 1rem;
+}
+
+.post-nav-btn {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.post-nav-btn:hover { color: var(--accent); }
+
+.devlog-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+}
+
+.devlog-page-num {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.post-nav-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}

@@ -34,6 +34,22 @@
     <div class="post-content">
       {{ content | safe }}
     </div>
+        <div class="post-nav">
+        {% if previousPost %}
+        <a href="{{ previousPost.url }}" class="post-nav-btn">← {{ previousPost.data.title }}</a>
+        {% else %}
+        <span></span>
+        {% endif %}
+
+        {% if nextPost %}
+        <a href="{{ nextPost.url }}" class="post-nav-btn">{{ nextPost.data.title }} →</a>
+        {% else %}
+        <span></span>
+        {% endif %}
+        </div>
+        <div class="post-nav-list">
+        <a href="/devlog" class="post-nav-btn">목록</a>
+        </div>
   </article>
   <script src="/main.js"></script>
 </body>
