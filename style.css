@@ -639,3 +639,97 @@ footer {
   justify-content: center;
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  /* NAV */
+  nav {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .nav-sns {
+    justify-content: flex-end;
+  }
+
+  /* DEVLOG LIST */
+  .devlog-list {
+    padding: 4rem 1rem;
+  }
+
+  .devlog-card {
+    flex-direction: column;
+  }
+
+  .devlog-thumb {
+    width: 100%;
+  }
+
+  .devlog-title {
+    font-size: 1rem;
+  }
+
+  .devlog-excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  /* DEVLOG PREVIEW */
+  .devlog-preview-list {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  /* POST */
+  .post {
+    padding: 6rem 1rem 4rem;
+  }
+
+  .post h1 {
+    font-size: 1.4rem;
+  }
+
+  .post-content {
+    font-size: 0.9rem;
+  }
+
+  .post-nav {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  /* HERO */
+  .hero-char {
+    font-size: clamp(2rem, 12vw, 4rem);
+  }
+
+  /* TEAM */
+  .member-grid {
+    flex-direction: column;
+  }
+
+  /* CONTACT */
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  /* SECTION */
+  section {
+    padding: 3rem 1rem;
+  }
+}
