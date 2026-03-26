@@ -26,9 +26,19 @@ nav {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   z-index: 100;
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(8px);
-  border-bottom: 2px solid var(--primary);
+  background: var(--primary);
+}
+
+nav::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  background: radial-gradient(circle at 50% 0%, var(--primary) 12px, transparent 13px);
+  background-size: 24px 16px;
+  background-repeat: repeat-x;
 }
 
 .nav-logo {
@@ -38,7 +48,7 @@ nav {
   text-decoration: none;
 }
 
-.nav-logo img { height: 40px; }
+.nav-logo img { height: 40px; filter: brightness(0) invert(1); }
 
 .nav-links {
   display: flex;
@@ -47,7 +57,7 @@ nav {
 }
 
 .nav-links a {
-  color: var(--primary);
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: bold;
@@ -65,12 +75,11 @@ nav {
 }
 
 .nav-sns a {
-  color: var(--primary);
+  color: #ffffff;
   transition: color 0.2s;
 }
 
 .nav-sns a:hover { color: var(--accent); }
-
 /* HERO */
 .hero {
   width: 100%;
@@ -409,4 +418,206 @@ footer {
 
 .contact-form textarea {
   resize: vertical;
+}
+
+.devlog {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.devlog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #ede6f4;
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.2s, padding-left 0.2s;
+}
+
+.devlog-item:hover {
+  color: var(--accent);
+  padding-left: 0.5rem;
+}
+
+.devlog-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.post {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 8rem 2rem 6rem;
+}
+
+.post-header {
+  margin-bottom: 3rem;
+}
+
+.back-link {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: var(--accent); }
+
+.post h1 {
+  font-size: 2rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.post-content {
+  line-height: 1.9;
+  color: var(--text);
+}
+
+.post-content h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 2rem 0 1rem;
+  border-left: 4px solid var(--accent);
+  padding-left: 1rem;
+}
+
+.post-content p { margin-bottom: 1.2rem; }
+
+.post-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.devlog-list {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.devlog-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  text-decoration: none;
+  color: var(--text);
+  transition: opacity 0.2s;
+}
+
+.devlog-card:hover { opacity: 0.7; }
+
+.devlog-left {
+  flex: 1;
+}
+
+.devlog-tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.devlog-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.devlog-excerpt {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.devlog-thumb {
+  width: 200px;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.devlog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.devlog-thumb-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #ede6f4;
+}
+
+.devlog-divider {
+  border: none;
+  border-top: 1px solid #ede6f4;
+}
+
+.devlog-preview-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.devlog-preview-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-decoration: none;
+  color: var(--text);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ede6f4;
+  transition: opacity 0.2s;
+}
+
+.devlog-preview-item:hover { opacity: 0.7; }
+
+.devlog-preview-thumb {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.devlog-preview-thumb img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.devlog-preview-excerpt {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.7;
+  position: relative;
+  max-height: 5em;
+  overflow: hidden;
+}
+
+.devlog-preview-excerpt::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3em;
+  background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+.devlog-preview-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }

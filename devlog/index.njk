@@ -1,0 +1,23 @@
+---
+layout: base.njk
+title: Devlog
+---
+
+<section class="devlog-list">
+  <h2>DEVLOG</h2>
+  {%- for post in collections.elsewhere | reverse %}
+  <a href="{{ post.url }}" class="devlog-card">
+    <div class="devlog-left">
+      <p class="devlog-tag">ELSEWHERE</p>
+      <h3 class="devlog-title">{{ post.data.title }}</h3>
+      <p class="devlog-excerpt">{{ post.data.excerpt }}</p>
+    </div>
+    {% if post.data.thumbnail %}
+    <div class="devlog-thumb">
+      <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}">
+    </div>
+    {% endif %}
+  </a>
+  <hr class="devlog-divider">
+  {%- endfor %}
+</section>
