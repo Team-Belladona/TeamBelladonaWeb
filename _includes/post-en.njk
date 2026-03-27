@@ -1,0 +1,28 @@
+---
+layout: base-en.njk
+---
+<article class="post">
+  <div class="post-header">
+    <a href="/en/devlog" class="back-link">← DEVLOG</a>
+    <h1>{{ title }}</h1>
+  </div>
+  <div class="post-content">
+    {{ content | safe }}
+  </div>
+  <div class="post-nav">
+    {% if previousPost %}
+    <a href="{{ previousPost.url }}" class="post-nav-btn">← {{ previousPost.data.title }}</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+
+    {% if nextPost %}
+    <a href="{{ nextPost.url }}" class="post-nav-btn">{{ nextPost.data.title }} →</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+  </div>
+  <div class="post-nav-list">
+    <a href="/en/devlog" class="post-nav-btn">List</a>
+  </div>
+</article>

@@ -2,7 +2,7 @@
 title: "#1 The Journey So Far Since Assembling the Team"
 date: 2026-03-26
 tags: elsewhere-en
-layout: post.njk
+layout: post-en.njk
 ---
 Hello! This is Hyoni, the team leader of Team Belladona, handling Game Design / Art / PM.
 
