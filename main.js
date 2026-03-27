@@ -49,6 +49,6 @@ if (form) {
       body: data,
       headers: { 'Accept': 'application/json' }
     });
-    form.innerHTML = '<p style="color: var(--accent); font-size: 1.1rem;">메시지가 전송됐습니다. 감사합니다 :)</p>';
+    form.innerHTML = '<p style="color: var(--accent); font-size: 1.1rem;">문의가 정상적으로 접수되었습니다. 추후 연락드리겠습니다 :)</p>';
   });
 }
