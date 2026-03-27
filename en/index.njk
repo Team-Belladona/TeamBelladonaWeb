@@ -38,27 +38,29 @@ title: Team Belladona
 
   <!-- DEVLOG -->
   <section class="devlog-preview" id="devlog">
-    <h2>DEVLOG</h2>
-    <div class="devlog-preview-list">
-      {%- for post in collections.elsewhere | reverse | limit(3) %}
-      <a href="{{ post.url }}" class="devlog-preview-item">
-        <div class="devlog-preview-thumb">
-          {% set thumb = post.templateContent | firstImage %}
-          {% if thumb %}
-            <img src="{{ thumb }}" alt="{{ post.data.title }}">
-          {% else %}
-            <p class="devlog-preview-excerpt">{{ post.templateContent | striptags | truncate(80) }}</p>
-          {% endif %}
-        </div>
-        <div class="devlog-preview-info">
-          <p class="devlog-tag">ELSEWHERE</p>
-          <h3 class="devlog-title">{{ post.data.title }}</h3>
-        </div>
-      </a>
-      {%- endfor %}
-    </div>
-    <a href="/devlog" class="btn">View All</a>
-  </section>
+<!-- DEVLOG -->
+<section class="devlog-preview" id="devlog">
+  <h2>DEVLOG</h2>
+  <div class="devlog-preview-list">
+    {%- for post in collections.elsewhereEn | reverse | limit(3) %}
+    <a href="{{ post.url }}" class="devlog-preview-item">
+      <div class="devlog-preview-thumb">
+        {% set thumb = post.templateContent | firstImage %}
+        {% if thumb %}
+          <img src="{{ thumb }}" alt="{{ post.data.title }}">
+        {% else %}
+          <p class="devlog-preview-excerpt">{{ post.templateContent | striptags | truncate(80) }}</p>
+        {% endif %}
+      </div>
+      <div class="devlog-preview-info">
+        <p class="devlog-tag">ELSEWHERE</p>
+        <h3 class="devlog-title">{{ post.data.title }}</h3>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+  <a href="/en/devlog" class="btn">View All</a>
+</section>
 
   <!-- TEAM -->
   <section class="team" id="team">
