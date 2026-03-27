@@ -5,6 +5,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("main.js");
+eleventyConfig.addCollection("elsewhereEn", function(api) {
+  return api.getFilteredByTag("elsewhere-en")
+    .filter(post => !post.inputPath.includes("index"))
+    .sort((a, b) => a.date - b.date);
+});
   eleventyConfig.addCollection("elsewherePaginated", function(api) {
   return api.getFilteredByTag("elsewhere")
     .filter(post => !post.inputPath.includes("index"))

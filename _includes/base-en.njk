@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/en" class="nav-logo">
+      <img src="/assets/logo-title.png" alt="Team Belladona">
+    </a>
+    <div class="nav-links">
+      <a href="/en/#projects">GAMES</a>
+      <a href="/en/devlog">DEVLOG</a>
+      <a href="/en/#team">ABOUT</a>
+      <a href="/en/#contact">CONTACT</a>
+    </div>
+    <div class="nav-sns">
+      <a href="/" class="lang-toggle">KO</a>
+      <span class="lang-divider">|</span>
+      <span class="lang-current">EN</span>
+      <a href="#" aria-label="X">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+  </nav>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <div class="footer-sns">
+      <a href="#" aria-label="X">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© Team BellaDona. All rights reserved.</p>
+  </footer>
+  <script src="/main.js"></script>
+</body>
+</html>
