@@ -38,3 +38,17 @@ heroChars.forEach(char => {
   char.style.color = baseColor;
   randomFlash(char);
 });
+
+const form = document.querySelector('.contact-form');
+if (form) {
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const data = new FormData(form);
+    await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    form.innerHTML = '<p style="color: var(--accent); font-size: 1.1rem;">메시지가 전송됐습니다. 감사합니다 :)</p>';
+  });
+}
