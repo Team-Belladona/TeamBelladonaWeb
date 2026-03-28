@@ -1,5 +1,5 @@
 ---
-title: "#1 팀모집 후, 지금까지의 여정"
+title: "#1 팀 모집 후, 지금까지의 여정"
 date: 2026-03-26
 tags: elsewhere
 layout: post.njk
