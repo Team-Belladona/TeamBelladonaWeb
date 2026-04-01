@@ -4,6 +4,9 @@ date: 2026-03-26
 tags: elsewhere-en
 layout: post-en.njk
 ---
+
+![썸네일](/assets/thumbnail.png)
+
 Hello! This is Hyoni, the team leader of Team Belladona, handling Game Design / Art / PM.
 
 So, what have we been up to since gathering our team members...?
@@ -15,7 +18,7 @@ So, what have we been up to since gathering our team members...?
 5. Creating the game title logo!
 6. Opening the team's official X account!
 7. Establishing our future plans and direction!
-. . . and so on and so forth...
+   . . . and so on and so forth...
 
 ... But! I'm only uploading my own work that I've gotten permission to share from the team! ^ ^
 
@@ -43,7 +46,7 @@ This is Anne's older brother, Noah! He cares for her deeply. Just what could hav
 
 And... besides them, we have so many other potential boss characters! Who knows which of them will actually make an appearance? We'll see...!
 
-![타이틀](/assets/1/벨라도나3.png) 
+![타이틀](/assets/1/벨라도나3.png)
 ![타이틀](/assets/1/벨라도나.png)
 
 I also made our team icon like this,
@@ -64,7 +67,6 @@ Here is the (draft) in-game look of our protagonist, Anne! Cute, right? ^ㅁ^!?
 ![앤스프라이트5](/assets/1/anne-attack_combo.gif)
 
 Also, I tried creating (and practicing!) assets using Spine animation for the very first time! It was so much fun!
-
 
 ![앨스웨어로고](/assets/1/엘스웨어로고.png)
 
