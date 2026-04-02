@@ -5,7 +5,7 @@ tags: elsewhere-ja
 layout: post-ja.njk
 ---
 
-![Elsewhere Logo](/assets/2/logo.webp)
+![Elsewhere Logo](/assets/thumbnail.png)
 
 こんにちは！チーム・ベラドナ開発日誌、第2回目のお話です。
 
@@ -17,7 +17,7 @@ layout: post-ja.njk
 
 ## チーム再編、そして二人で走る
 
-チームの構成に変化が生じました。様々な事情が重なりメンバーが調整され、今はヒョニ（Hyoni）とパンテラ（Panthera）、二人で_エルスウェア_を制作していくことになりました。
+チームの構成に変化が生じました。様々な事情が重なりメンバーが調整され、今はヒョニ（Hyoni）とパンテラ（Panthera）、二人で*エルスウェア*を制作していくことになりました。
 
 ![Team Belladona](/assets/2/tung.png)
 

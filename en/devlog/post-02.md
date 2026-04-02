@@ -5,7 +5,7 @@ tags: elsewhere-en
 layout: post-en.njk
 ---
 
-![Elsewhere Logo](/assets/2/logo.webp)
+![Elsewhere Logo](/assets/thumbnail.png)
 
 Hello! This is the second entry in Team Belladona's development log.
 
