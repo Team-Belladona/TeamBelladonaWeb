@@ -6,26 +6,32 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("style.css");
   eleventyConfig.addPassthroughCopy("main.js");
   eleventyConfig.addCollection("elsewhereEnPaged", function(api) {
-  const posts = api.getFilteredByTag("elsewhere-en")
-    .filter(post => !post.inputPath.includes("index"))
-    .sort((a, b) => a.date - b.date);
-  
-  for (let i = 0; i < posts.length; i++) {
-    posts[i].data.previousPost = i > 0 ? posts[i - 1] : null;
-    posts[i].data.nextPost = i < posts.length - 1 ? posts[i + 1] : null;
-  }
-
-  return posts;
-});
+    const posts = api.getFilteredByTag("elsewhere-en")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+    
+    for (let i = 0; i < posts.length; i++) {
+      posts[i].data.previousPost = i > 0 ? posts[i - 1] : null;
+      posts[i].data.nextPost = i < posts.length - 1 ? posts[i + 1] : null;
+    }
+    return posts;
+  });
   eleventyConfig.addCollection("elsewhereEn", function(api) {
     return api.getFilteredByTag("elsewhere-en")
       .filter(post => !post.inputPath.includes("index"))
-      .sort((a, b) => a.date - b.date);
+      .sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("elsewhereEnPaginated", function(api) {
+  return api.getFilteredByTag("elsewhere-en")
+    .filter(post => !post.inputPath.includes("index"))
+    .sort((a, b) => b.date - a.date);
 });
-  eleventyConfig.addCollection("elsewherePaginated", function(api) {
+
+eleventyConfig.addCollection("elsewherePaginated", function(api) {
   return api.getFilteredByTag("elsewhere")
     .filter(post => !post.inputPath.includes("index"))
-    .reverse();
+    .sort((a, b) => b.date - a.date);
 });
   eleventyConfig.addCollection("elsewherePaged", function(api) {
   const posts = api.getFilteredByTag("elsewhere")
