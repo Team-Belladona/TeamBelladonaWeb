@@ -5,7 +5,7 @@ tags: elsewhere-ja
 layout: post-ja.njk
 ---
 
-![Elsewhere Logo](/assets/2/logo.webp)
+![thumbnail](/assets/thumbnail.png)
 
 こんにちは！チーム・ベラドナ開発日誌、第2回目のお話です。
 
