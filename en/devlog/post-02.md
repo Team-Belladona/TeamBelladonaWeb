@@ -5,7 +5,7 @@ tags: elsewhere-en
 layout: post-en.njk
 ---
 
-![썸네일](/assets/thumbnail.png)
+![Elsewhere Logo](/assets/2/logo.webp)
 
 Hello! This is the second entry in Team Belladona's development log.
 
@@ -31,17 +31,17 @@ And we set ourselves a goal: **a first playable build by early May.** The moment
 
 ## Hyoni: Villains Need Their Own Logic
 
-This period was largely spent getting the characters sorted out.
+This period, I spent a lot of time getting the characters sorted out.
 
-You might remember the boss characters from Chapter 1 — Roger, Encore, Haido, and Buki. It wouldn't be much of a story if they were just obstacles to knock down. For the narrative to breathe, each of them needs a reason to clash with Anne, a logic behind their conflict. We want them to feel like characters with their own worldview and conviction, not just placeholders in Anne's path.
+You might remember the boss characters from Chapter 1 — Roger, Encore, Haido, and Buki. It wouldn't be much of a story if they were just obstacles to knock down. For the narrative to breathe, each of them needs a reason to clash with Anne, a logic behind their conflict. I want them to feel like characters with their own worldview and conviction, not just placeholders in Anne's path.
 
 ![Anne](/assets/2/anne.jpg)
 
-So this time, Hyoni worked on character introduction pages — drawing each one while fleshing out their personalities. There's something that happens when you're drawing a character: their story starts to show itself. That moment is genuinely exciting.
+So this time, I worked on character introduction pages — drawing each one while fleshing out their personalities. There's something that happens when you're drawing a character: their story starts to show itself. That moment is genuinely exciting.
 
-The one that got the most attention this round was **the King of Elsewhere** — the figure at the center of everything in this game. Hyoni and Panthera talked it through at length, and the ruler's personality that emerged feels just right. Not simply "a bad king," but someone whose choices carry an internal logic, a reason. The picture of how Elsewhere's darkness radiates outward from this character is slowly coming into focus.
+The one I put the most work into this round was **the King of Elsewhere** — the figure at the center of everything in this game. Panthera and I talked it through at length, and the ruler's personality that emerged feels just right. Not simply "a bad king," but someone whose choices carry an internal logic, a reason. The picture of how Elsewhere's darkness radiates outward from this character is slowly coming into focus.
 
-The characters and their traits aren't fully matched up yet, but the direction is clear. How will Anne face all of this? Honestly, we're curious too. 😁
+The characters and their traits aren't fully matched up yet, but the direction is clear. How will Anne face all of this? Honestly, I'm curious too. 😁
 
 ---
 
@@ -59,7 +59,7 @@ I started connecting it piece by piece: how Anne's sprite (built in Spine by Hyo
 
 ![Anne in action](/assets/2/ork3_anne.gif)
 
-When planning decisions need to be made, we pull together quickly, throw out ideas, and land on something fast. Everything is still fluid at this early stage, but that fluidity feels freeing rather than chaotic.
+When planning decisions need to be made, Hyoni and I pull together quickly, throw out ideas, and land on something fast. Everything is still fluid at this early stage, but that fluidity feels freeing rather than chaotic.
 
 ---
 

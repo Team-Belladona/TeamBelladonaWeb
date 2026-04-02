@@ -2,7 +2,7 @@
 title: "#2 팀 벨라도나, 새로운 출발"
 date: 2026-04-02
 tags: elsewhere
-layout: post.njk
+layout: post-ko.njk
 ---
 
 ![썸네일](/assets/thumbnail.png)

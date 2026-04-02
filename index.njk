@@ -1,98 +1,16 @@
 ---
-layout: base.njk
-title: Team Belladona
+permalink: /index.html
 ---
-
-<section class="hero">
-  <div class="hero-title">
-    <p class="hero-sub">team</p>
-    <div class="hero-main">
-      <span class="hero-char" style="--i:0">B</span>
-      <span class="hero-char" style="--i:1">e</span>
-      <span class="hero-char" style="--i:2">l</span>
-      <span class="hero-char" style="--i:3">l</span>
-      <span class="hero-char" style="--i:4">a</span>
-      <span class="hero-char" style="--i:5">D</span>
-      <span class="hero-char" style="--i:6">o</span>
-      <span class="hero-char" style="--i:7">n</span>
-      <span class="hero-char" style="--i:8">a</span>
-    </div>
-  </div>
-</section>
-
-<div class="content-wrap">
-
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <h2>GAMES</h2>
-    <div class="game-entry">
-      <a href="/devlog">
-        <img src="/assets/game-logo.png" alt="ELSEWHERE" class="game-logo-big">
-      </a>
-      <div class="game-desc">
-        <p class="game-genre">내러티브 턴제 타이밍 블랙코미디 ARPG, 엘스웨어.</p>
-        <p class="game-summary">오빠를 구하고, 세계를 구하기 위해 엘스웨어에 발을 들인 </br> 앤의 블랙코미디스러운 여정!</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEVLOG -->
-  <section class="devlog-preview" id="devlog">
-    <h2>DEVLOG</h2>
-    <div class="devlog-preview-list">
-      {%- for post in collections.elsewhere | reverse | limit(3) %}
-      <a href="{{ post.url }}" class="devlog-preview-item">
-        <div class="devlog-preview-thumb">
-          {% set thumb = post.templateContent | firstImage %}
-          {% if thumb %}
-            <img src="{{ thumb }}" alt="{{ post.data.title }}">
-          {% else %}
-            <p class="devlog-preview-excerpt">{{ post.templateContent | striptags | truncate(80) }}</p>
-          {% endif %}
-        </div>
-        <div class="devlog-preview-info">
-          <p class="devlog-tag">ELSEWHERE</p>
-          <h3 class="devlog-title">{{ post.data.title }}</h3>
-        </div>
-      </a>
-      {%- endfor %}
-    </div>
-    <a href="/devlog" class="btn">전체 보기</a>
-  </section>
-
-  <!-- TEAM -->
-  <section class="team" id="team">
-    <h2>TEAM</h2>
-    <div class="member-grid">
-      <div class="member">
-        <p class="member-name">효니</p>
-        <p class="member-role">기획 · 아트 · PM</p>
-      </div>
-        <div class= "member">
-          <p class= "member-name"> 판테라</p>
-          <p class= "member-role"> 프로그래머 · 기획
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <h2>CONTACT</h2>
-    <form class="contact-form" method="POST" action="https://formspree.io/f/xykbzpeo">
-      <div class="form-group">
-        <label for="name">이름</label>
-        <input type="text" id="name" name="name" placeholder="John Doe" required>
-      </div>
-      <div class="form-group">
-        <label for="email">이메일</label>
-        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
-      </div>
-      <div class="form-group">
-        <label for="message">메시지</label>
-        <textarea id="message" name="message" rows="5" placeholder="Hi!" required></textarea>
-      </div>
-      <button type="submit" class="btn">보내기</button>
-    </form>
-  </section>
-
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script>
+    const lang = navigator.language || navigator.userLanguage || '';
+    if (lang.startsWith('ja')) location.replace('/ja/');
+    else if (lang.startsWith('ko')) location.replace('/ko/');
+    else location.replace('/en/');
+  </script>
+</head>
+<body></body>
+</html>

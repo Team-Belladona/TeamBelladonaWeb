@@ -76,4 +76,4 @@ And here is the in-game title screen! (Draft) We're starting small, but I believ
 
 Overall, the game is going to have a paper fairy tale (pop-up book) vibe. It's going to be a very, very cute dark comedy game. 😁
 
-This is my first time doing a full-fledged collaboration like this, and it’s incredibly fun! Please keep an eye on us from now on, we're going to give it our all!!
+This is my first time doing a full-fledged collaboration like this, and it's incredibly fun! Please keep an eye on us from now on, we're going to give it our all!!
