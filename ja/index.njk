@@ -1,0 +1,98 @@
+---
+layout: base-ja.njk
+title: Team Belladona
+---
+
+<section class="hero">
+  <div class="hero-title">
+    <p class="hero-sub">team</p>
+    <div class="hero-main">
+      <span class="hero-char" style="--i:0">B</span>
+      <span class="hero-char" style="--i:1">e</span>
+      <span class="hero-char" style="--i:2">l</span>
+      <span class="hero-char" style="--i:3">l</span>
+      <span class="hero-char" style="--i:4">a</span>
+      <span class="hero-char" style="--i:5">D</span>
+      <span class="hero-char" style="--i:6">o</span>
+      <span class="hero-char" style="--i:7">n</span>
+      <span class="hero-char" style="--i:8">a</span>
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2>GAMES</h2>
+    <div class="game-entry">
+      <a href="/ja/devlog">
+        <img src="/assets/game-logo.png" alt="ELSEWHERE" class="game-logo-big">
+      </a>
+      <div class="game-desc">
+        <p class="game-genre">ナラティブ・ターン制・タイミング・ブラックコメディ ARPG、エルスウェア。</p>
+        <p class="game-summary">お兄さんを救い、世界を救うためにエルスウェアへ踏み込んだ </br> アンのブラックコメディな旅！</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVLOG -->
+  <section class="devlog-preview" id="devlog">
+    <h2>DEVLOG</h2>
+    <div class="devlog-preview-list">
+      {%- for post in collections.elsewhereJa | reverse | limit(3) %}
+      <a href="{{ post.url }}" class="devlog-preview-item">
+        <div class="devlog-preview-thumb">
+          {% set thumb = post.templateContent | firstImage %}
+          {% if thumb %}
+            <img src="{{ thumb }}" alt="{{ post.data.title }}">
+          {% else %}
+            <p class="devlog-preview-excerpt">{{ post.templateContent | striptags | truncate(80) }}</p>
+          {% endif %}
+        </div>
+        <div class="devlog-preview-info">
+          <p class="devlog-tag">ELSEWHERE</p>
+          <h3 class="devlog-title">{{ post.data.title }}</h3>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+    <a href="/ja/devlog" class="btn">すべて見る</a>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <h2>TEAM</h2>
+    <div class="member-grid">
+      <div class="member">
+        <p class="member-name">ヒョニ（Hyoni）</p>
+        <p class="member-role">アート · 企画 · PM</p>
+      </div>
+      <div class="member">
+        <p class="member-name">パンテラ（Panthera）</p>
+        <p class="member-role">プログラマー · 企画</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>CONTACT</h2>
+    <form class="contact-form" method="POST" action="https://formspree.io/f/xykbzpeo">
+      <div class="form-group">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="taro@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">メッセージ</label>
+        <textarea id="message" name="message" rows="5" placeholder="こんにちは！" required></textarea>
+      </div>
+      <button type="submit" class="btn">送信する</button>
+    </form>
+  </section>
+
+</div>

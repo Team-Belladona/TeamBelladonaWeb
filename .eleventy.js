@@ -44,6 +44,30 @@ module.exports = function(eleventyConfig) {
     return api.getFilteredByTag("elsewhere").filter(post => !post.inputPath.includes("index"));
   });
 
+  eleventyConfig.addCollection("elsewhereJaPaged", function(api) {
+    const posts = api.getFilteredByTag("elsewhere-ja")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => a.date - b.date);
+
+    for (let i = 0; i < posts.length; i++) {
+      posts[i].data.previousPost = i > 0 ? posts[i - 1] : null;
+      posts[i].data.nextPost = i < posts.length - 1 ? posts[i + 1] : null;
+    }
+    return posts;
+  });
+
+  eleventyConfig.addCollection("elsewhereJa", function(api) {
+    return api.getFilteredByTag("elsewhere-ja")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => a.date - b.date);
+  });
+
+  eleventyConfig.addCollection("elsewhereJaPaginated", function(api) {
+    return api.getFilteredByTag("elsewhere-ja")
+      .filter(post => !post.inputPath.includes("index"))
+      .reverse();
+  });
+
   eleventyConfig.addFilter("limit", function(arr, n) {
     return arr.slice(0, n);
   });

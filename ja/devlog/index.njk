@@ -1,0 +1,44 @@
+---
+layout: base-ja.njk
+title: Devlog
+pagination:
+  data: collections.elsewhereJaPaginated
+  size: 5
+  alias: posts
+---
+
+<section class="devlog-list">
+  <h2>DEVLOG</h2>
+  {%- for post in posts %}
+  <a href="{{ post.url }}" class="devlog-card">
+    <div class="devlog-left">
+      <p class="devlog-tag">ELSEWHERE</p>
+      <h3 class="devlog-title">{{ post.data.title }}</h3>
+      <p class="devlog-excerpt">{{ post.templateContent | striptags | truncate(150) }}</p>
+    </div>
+    {% set thumb = post.templateContent | firstImage %}
+    {% if thumb %}
+    <div class="devlog-thumb">
+      <img src="{{ thumb }}" alt="{{ post.data.title }}">
+    </div>
+    {% endif %}
+  </a>
+  <hr class="devlog-divider">
+  {%- endfor %}
+
+  <div class="devlog-pagination">
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="post-nav-btn">← 次へ</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+
+    <span class="devlog-page-num">{{ pagination.pageNumber + 1 }} / {{ pagination.pages.length }}</span>
+
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="post-nav-btn">前へ →</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+  </div>
+</section>
