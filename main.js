@@ -43,12 +43,12 @@ const form = document.querySelector('.contact-form');
 if (form) {
   form.addEventListener('submit', async e => {
     e.preventDefault();
-    const data = new FormData(form);
-    await fetch(form.action, {
+    const data = Object.fromEntries(new FormData(form));
+    await fetch('/api/contact', {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
     });
-    form.innerHTML = '<p style="color: var(--accent); font-size: 1.1rem;">문의가 정상적으로 접수되었습니다. 추후 연락드리겠습니다 :)</p>';
+    form.innerHTML = '<p style="color: var(--accent);">메시지가 전송됐습니다 :)</p>';
   });
 }
