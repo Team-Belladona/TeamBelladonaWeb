@@ -49,6 +49,6 @@ if (form) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
-    form.innerHTML = '<p style="color: var(--accent);">메시지가 전송됐습니다 :)</p>';
+    form.innerHTML = '<p style="color: var(--accent);">complete:)!</p>';
   });
 }
