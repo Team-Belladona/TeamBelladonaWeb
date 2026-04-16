@@ -47,21 +47,21 @@ ORK Framework provides portrait and dialogue features separately, but the UI we 
 
 That said, the portrait UI felt a bit heavy for lighter moments — a character muttering to themselves, or tossing out a quick joke. So I also built a separate speech bubble UI for short exchanges and throwaway lines, giving us the flexibility to handle all kinds of conversational moments naturally. It's functionally complete for now and will get further polish down the line.
 
-![speechbubble](/assets/4/speech_buuble.gif)
+![speechbubble](/assets/4/speech_bubble.gif)
 
 I also designed the core logic for Anne's four attack types — some of the trickier implementation work I've tackled so far.
 
 **Basic Attack**: Watch the timing bar, and press the spacebar the moment it turns green.
 
-![normalattack](/assets/4/normal_attack)
+![normalattack](/assets/4/normal_attack.gif)
 
 **Rapid Attack**: Mash the spacebar for two seconds to fill the timing bar.
 
-![comboattack](/assets/4/combo_attack)
+![comboattack](/assets/4/combo_attack.gif)
 
 **Charge Attack**: Hold the spacebar, then release it when the bar turns green.
 
-![chargeattack](/assets/4/charge_attack)
+![chargeattack](/assets/4/charge_attack.gif)
 
 **The Big Speech**: A derivative of the fast basic attack. Anne launches into a rapid-fire string of loud words, dealing mental damage to the enemy. It felt very Anne — and honestly, it was fun to build.
 
