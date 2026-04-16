@@ -260,6 +260,15 @@ button.btn {
 .member {
   padding: 1.5rem 2rem;
   min-width: 140px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.member-avatar {
+  width: 80px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 footer {
