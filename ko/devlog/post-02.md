@@ -29,7 +29,7 @@ layout: post-ko.njk
 
 ---
 
-## 효니: 악당들에게도 논리가 있다
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> 효니: 악당들에게도 논리가 있다
 
 이번에 캐릭터 정리에 많은 시간을 쏟았습니다.
 
@@ -45,7 +45,7 @@ layout: post-ko.njk
 
 ---
 
-## 판테라: 혼자 하던 프로젝트에서 팀으로
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> 판테라: 혼자 하던 프로젝트에서 팀으로
 
 저는 원래 혼자서 진행하던 프로젝트가 있었습니다. 그러다 이번에 팀 벨라도나에 합류하게 되었어요.
 

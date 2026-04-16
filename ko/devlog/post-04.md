@@ -15,7 +15,7 @@ layout: post-ko.njk
 
 ---
 
-## 효니: 게임을 만들고 있구나, 실감하는 순간
+<h2><img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> 효니: 게임을 만들고 있구나, 실감하는 순간</h2>
 
 이번 주는 크게 세 가지 작업을 진행했습니다.
 
@@ -39,7 +39,7 @@ layout: post-ko.njk
 
 ---
 
-## 판테라: 기능 하나가 게임다움을 만든다
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> 판테라: 기능 하나가 게임다움을 만든다
 
 이번 주 저는 월드 파트의 감초 역할을 하는 포트레이트 기능과, 앤의 전투 공격 네 가지를 구현했습니다.
 

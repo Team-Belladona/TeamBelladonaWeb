@@ -15,7 +15,7 @@ layout: post-ja.njk
 
 ---
 
-## ヒョニ：ゲームを作っているんだ、実感する瞬間
+<h2><img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> ヒョニ：ゲームを作っているんだ、実感する瞬間</h2>
 
 今週は大きく三つの作業を進めました。
 
@@ -39,7 +39,7 @@ layout: post-ja.njk
 
 ---
 
-## パンテラ：機能一つがゲームらしさを作る
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> パンテラ：機能一つがゲームらしさを作る
 
 今週の僕は、ワールドパートの名脇役となるポートレイト機能と、アンが戦闘で使う四種類の攻撃を実装しました。
 

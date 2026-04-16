@@ -15,7 +15,7 @@ This week also called for an agreement on how we'd use Spine together within Uni
 
 ---
 
-## Hyoni: Noah, Brought to Life in Two Sizes
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> Hyoni: Noah, Brought to Life in Two Sizes
 
 This week, I focused on the Spine work for Noah's character.
 
@@ -37,7 +37,7 @@ This week also had me thinking a lot about combat design. We had a direction —
 
 ---
 
-## Panthera: The Wrong Turns Were Worth It
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> Panthera: The Wrong Turns Were Worth It
 
 I took quite a few detours this week.
 

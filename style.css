@@ -473,6 +473,13 @@ footer {
   margin: 0.5rem auto;
   display: block;
 }
+.post-content h2 img, .post-content h3 img {
+  display: inline;
+  margin: 0 0.3em 0 0;
+  height: 1.5em;
+  width: auto;
+  vertical-align: middle;
+}
 .devlog-list {
   max-width: 860px;
   margin: 0 auto;

@@ -15,7 +15,7 @@ layout: post-ja.njk
 
 ---
 
-## ヒョニ（Hyoni）：ノア、二つのサイズで動き出す
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> ヒョニ（Hyoni）：ノア、二つのサイズで動き出す
 
 今週はノアのキャラクターのSpine作業に集中しました。
 
@@ -37,7 +37,7 @@ layout: post-ja.njk
 
 ---
 
-## パンテラ（Panthera）：回り道も結局は基礎になる
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> パンテラ（Panthera）：回り道も結局は基礎になる
 
 今週の僕はかなり遠回りをしました。
 

@@ -15,7 +15,7 @@ layout: post-ko.njk
 
 ---
 
-## 효니: 노아, 두 개의 크기로 살아나다
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> 효니: 노아, 두 개의 크기로 살아나다
 
 이번 주는 노아 캐릭터의 스파인 작업에 집중했습니다.
 
@@ -37,7 +37,7 @@ layout: post-ko.njk
 
 ---
 
-## 판테라: 뻘짓도 결국 기초가 된다
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> 판테라: 뻘짓도 결국 기초가 된다
 
 이번 주 저는 꽤 돌아왔습니다.
 

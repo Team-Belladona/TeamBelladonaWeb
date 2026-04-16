@@ -15,7 +15,7 @@ There was a moment where we seriously considered dropping the timing ARPG concep
 
 ---
 
-## Hyoni: The Moment It Feels Real
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> Hyoni: The Moment It Feels Real
 
 This week, I worked on three main things.
 
@@ -39,7 +39,7 @@ The third was a small experiment with art style. My drawing program got an updat
 
 ---
 
-## Panthera: One Feature Changes Everything
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> Panthera: One Feature Changes Everything
 
 This week I implemented the portrait feature — which adds a lot of character to the world part — along with the core logic for Anne's four attack types.
 

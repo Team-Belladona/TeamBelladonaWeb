@@ -29,7 +29,7 @@ And we set ourselves a goal: **a first playable build by early May.** The moment
 
 ---
 
-## Hyoni: Villains Need Their Own Logic
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> Hyoni: Villains Need Their Own Logic
 
 This period, I spent a lot of time getting the characters sorted out.
 
@@ -45,7 +45,7 @@ The characters and their traits aren't fully matched up yet, but the direction i
 
 ---
 
-## Panthera: From a Solo Project to a Team
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> Panthera: From a Solo Project to a Team
 
 I had originally been working on a project on my own. Then came the opportunity to join Team Belladona.
 

@@ -29,7 +29,7 @@ layout: post-ja.njk
 
 ---
 
-## ヒョニ：悪役にも論理がある
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> ヒョニ：悪役にも論理がある
 
 今回はキャラクターの整理に多くの時間を費やしました。
 
@@ -45,7 +45,7 @@ layout: post-ja.njk
 
 ---
 
-## パンテラ：ソロプロジェクトからチームへ
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> パンテラ：ソロプロジェクトからチームへ
 
 僕はもともと一人で進めていたプロジェクトがありました。そして今回、チーム・ベラドナに参加することになりました。
 
