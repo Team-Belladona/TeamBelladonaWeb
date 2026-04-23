@@ -23,7 +23,7 @@ UIの方向性についてずっと悩んでいました。二人で話し合っ
 
 ---
 
-## ヒョニ：世界がどんどんリアルに埋まっていく
+## <img src="/assets/hyoni_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> ヒョニ：世界がどんどんリアルに埋まっていく
 
 今週はマップのテクスチャとシェーダー作業、UI関連の作業、そしてゲーム内のアニメーションリソース制作を中心に進めました。
 
@@ -50,7 +50,7 @@ UIの方向性についてずっと悩んでいました。二人で話し合っ
 
 ---
 
-## パンテラ：回避一つにこんなに深い穴が
+## <img src="/assets/panthera_head.png" style="height:1.5em; vertical-align:middle; margin-right:0.3em;"> パンテラ：回避一つにこんなに深い穴が
 
 今週もいろいろな実装を進めました。
 
