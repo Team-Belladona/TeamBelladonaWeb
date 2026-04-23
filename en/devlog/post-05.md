@@ -46,7 +46,7 @@ The UI direction was also a big question this week. To match the paper fairy tal
 ![gothiclight](/assets/5/gothiclight.png)
 ![paper](/assets/5/paper.png)
 
-The paper-textured UI won out, with over half the votes. On top of that, I gained new followers and received a lot of encouraging messages. It felt like more than we deserved, honestly — and it made me want to push even harder. Every bit of support is fuel.
+The paper-textured UI won out, with over half the votes. On top of that, I gained new followers and received a lot of encouraging messages. It made me genuinely happy to see so many people taking an interest. Every bit of support is fuel.
 
 ---
 
