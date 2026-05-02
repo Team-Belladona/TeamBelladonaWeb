@@ -16,7 +16,7 @@ module.exports = async function handler(req, res) {
   try {
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER,
+      to: [process.env.GMAIL_USER, process.env.TEAM_EMAIL],
       subject: `[Team Belladona] ${name}님의 메시지`,
       text: `이름: ${name}\n이메일: ${email}\n\n${message}`,
     });
