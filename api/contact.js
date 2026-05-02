@@ -5,6 +5,9 @@ module.exports = async function handler(req, res) {
 
   const { name, email, message } = req.body;
 
+  console.log('GMAIL_USER:', process.env.GMAIL_USER);
+  console.log('GMAIL_PASS 존재:', !!process.env.GMAIL_PASS);
+
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -22,6 +25,7 @@ module.exports = async function handler(req, res) {
     });
     res.status(200).json({ success: true });
   } catch (e) {
+    console.error('sendMail error:', e.message);
     res.status(500).json({ error: e.message });
   }
 }
