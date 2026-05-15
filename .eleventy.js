@@ -88,19 +88,33 @@ eleventyConfig.addCollection("elsewherePaginated", function(api) {
 
   eleventyConfig.addFilter("firstImage", function(content) {
     const match = content.match(/<img[^>]+src="([^">]+)"/);
-    return match ? match[1] : null;
+    if (!match) return null;
+
+    const url = match[1];
+    const isSafe = url.startsWith("http://") ||
+                  url.startsWith("https://") ||
+                  url.startsWith("/");
+
+    return isSafe ? url : null;
   });
 
   eleventyConfig.addTransform("webpImages", async function(content, outputPath) {
     if (!outputPath || !outputPath.endsWith(".html")) return content;
 
+    const path = require("path");
     const $ = cheerio.load(content);
     const imgs = $("img").toArray();
 
-      for (const img of imgs) {
-        const src = decodeURIComponent($(img).attr("src"));
-        if (!src || src.startsWith("http") || src.startsWith("/assets/img/") || src.includes(".gif")) continue;
-        const localPath = "." + src;
+    for (const img of imgs) {
+      const src = decodeURIComponent($(img).attr("src") || "");
+      if (!src || src.startsWith("http") || src.startsWith("/assets/img/") || src.includes(".gif")) continue;
+
+      const localPath = "." + src;
+      const resolved = path.resolve(localPath);
+      const base = path.resolve(".");
+
+      // 🆕 디렉토리 탈출 방지
+      if (!resolved.startsWith(base)) continue;
 
       try {
         let metadata = await Image(localPath, {
@@ -119,6 +133,7 @@ eleventyConfig.addCollection("elsewherePaginated", function(api) {
 
     return $.html();
   });
+
 
   return {
     dir: {
