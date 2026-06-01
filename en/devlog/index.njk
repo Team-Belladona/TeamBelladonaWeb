@@ -27,16 +27,16 @@ pagination:
   {%- endfor %}
 
   <div class="devlog-pagination">
-    {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}" class="post-nav-btn">← Next</a>
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="post-nav-btn">← Next</a>
     {% else %}
     <span></span>
     {% endif %}
 
     <span class="devlog-page-num">{{ pagination.pageNumber + 1 }} / {{ pagination.pages.length }}</span>
 
-    {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}" class="post-nav-btn">Prev →</a>
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="post-nav-btn">Prev →</a>
     {% else %}
     <span></span>
     {% endif %}
