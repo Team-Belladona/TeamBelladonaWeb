@@ -60,4 +60,8 @@ See you in the next devlog. Looking forward to it. 😊
 ![nowhere](/assets/nowhere/01/nowhere.png)
 
 **NOWHERE. A town with no name.**
-No one knows why it was built, or how. What is certain is this: the town draws monsters in and makes them part of itself. No one has ever found a way out. Death, it turns out, is no exit either.
+
+No one knows why it was built, or how.
+What is certain is this: the town draws monsters in and makes them part of itself.
+No one has ever found a way out.
+Death, it turns out, is no exit either.
