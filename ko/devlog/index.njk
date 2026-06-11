@@ -2,7 +2,7 @@
 layout: base-ko.njk
 title: Devlog
 pagination:
-  data: collections.elsewherePaginated
+  data: collections.devlogKoPaginated
   size: 5
   alias: posts
 ---
@@ -12,7 +12,11 @@ pagination:
   {%- for post in posts %}
   <a href="{{ post.url }}" class="devlog-card">
     <div class="devlog-left">
-      <p class="devlog-tag">ELSEWHERE</p>
+      {% if "elsewhere" in post.data.tags %}
+        <p class="devlog-tag">ELSEWHERE</p>
+      {% elif "nowhere" in post.data.tags %}
+        <p class="devlog-tag">NOWHERE</p>
+      {% endif %}
       <h3 class="devlog-title">{{ post.data.title }}</h3>
       <p class="devlog-excerpt">{{ post.templateContent | striptags | truncate(150) }}</p>
     </div>

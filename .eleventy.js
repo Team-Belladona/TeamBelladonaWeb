@@ -74,6 +74,88 @@ eleventyConfig.addCollection("elsewherePaginated", function(api) {
       .reverse();
   });
 
+  // Combined devlog collections (elsewhere + nowhere)
+  eleventyConfig.addCollection("devlogKoPaged", function(api) {
+    const posts = api.getFilteredByTag("devlog-ko")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => a.date - b.date);
+    posts.forEach((post, i) => {
+      post.data.previousPost = posts[i - 1] || null;
+      post.data.nextPost = posts[i + 1] || null;
+    });
+    return posts;
+  });
+
+  eleventyConfig.addCollection("devlogKoPaginated", function(api) {
+    return api.getFilteredByTag("devlog-ko")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("devlogEnPaginated", function(api) {
+    return api.getFilteredByTag("devlog-en")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("devlogJaPaginated", function(api) {
+    return api.getFilteredByTag("devlog-ja")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+  });
+
+  // Nowhere collections
+  eleventyConfig.addCollection("nowherePaged", function(api) {
+    const posts = api.getFilteredByTag("nowhere")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => a.date - b.date);
+    posts.forEach((post, i) => {
+      post.data.previousPost = posts[i - 1] || null;
+      post.data.nextPost = posts[i + 1] || null;
+    });
+    return posts;
+  });
+
+  eleventyConfig.addCollection("nowherePaginated", function(api) {
+    return api.getFilteredByTag("nowhere")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("nowhereEnPaged", function(api) {
+    const posts = api.getFilteredByTag("nowhere-en")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => a.date - b.date);
+    posts.forEach((post, i) => {
+      post.data.previousPost = posts[i - 1] || null;
+      post.data.nextPost = posts[i + 1] || null;
+    });
+    return posts;
+  });
+
+  eleventyConfig.addCollection("nowhereEnPaginated", function(api) {
+    return api.getFilteredByTag("nowhere-en")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+  });
+
+  eleventyConfig.addCollection("nowhereJaPaged", function(api) {
+    const posts = api.getFilteredByTag("nowhere-ja")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => a.date - b.date);
+    posts.forEach((post, i) => {
+      post.data.previousPost = posts[i - 1] || null;
+      post.data.nextPost = posts[i + 1] || null;
+    });
+    return posts;
+  });
+
+  eleventyConfig.addCollection("nowhereJaPaginated", function(api) {
+    return api.getFilteredByTag("nowhere-ja")
+      .filter(post => !post.inputPath.includes("index"))
+      .sort((a, b) => b.date - a.date);
+  });
+
   eleventyConfig.addFilter("limit", function(arr, n) {
     return arr.slice(0, n);
   });
