@@ -29,7 +29,7 @@ title: Team Belladona
   <section class="devlog-preview" id="devlog">
     <h2>DEVLOG</h2>
     <div class="devlog-preview-list">
-      {%- for post in collections.elsewhereEn | limit(3) %}
+      {%- for post in collections.devlogEnPaginated | limit(3) %}
       <a href="{{ post.url }}" class="devlog-preview-item">
         <div class="devlog-preview-thumb">
           {% set thumb = post.templateContent | firstImage %}
@@ -40,7 +40,11 @@ title: Team Belladona
           {% endif %}
         </div>
         <div class="devlog-preview-info">
-          <p class="devlog-tag">ELSEWHERE</p>
+          {% if "nowhere-en" in post.data.tags %}
+            <p class="devlog-tag">NOWHERE</p>
+          {% else %}
+            <p class="devlog-tag">ELSEWHERE</p>
+          {% endif %}
           <h3 class="devlog-title">{{ post.data.title }}</h3>
         </div>
       </a>
