@@ -45,7 +45,7 @@ Text effects also took a step forward. By dropping `<wave>`, `<shake>`, or `<wig
 
 ![demo](/assets/elsewhere/10/demo.gif)
 
-I also spent time this week replying to a message from an aspiring indie developer who reached out to the team. Between the two of us, we covered a lot of ground — tool selection, how we use AI, thoughts on team building, and feedback on their synopsis. We wrote it carefully, hoping our own experiences might be useful to someone just starting out. Getting a message like that is a small reminder that people are paying attention to what we're building.
+Also, this week, Pantera and Hyoni provided detailed responses from their respective perspectives to the email you sent the team regarding indie development. Getting a message like that is a small reminder that people are paying attention to what we're building.
 
 ---
 
